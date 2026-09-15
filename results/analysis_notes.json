@@ -1,0 +1,41 @@
+{
+  "mcnemar": {
+    "method": "McNemar exact/chi2 with continuity correction, paired by intent_id (n=200, same intents, temp=0)",
+    "action_correct": [
+      {
+        "A": "qwen2.5:7b",
+        "B": "gemma2:9b-q4_K_M",
+        "b_A_only": 3,
+        "c_B_only": 17,
+        "chi2": 8.45,
+        "p": 0.0037,
+        "verdict": "gemma significantly better on action"
+      },
+      {
+        "A": "qwen2.5:7b",
+        "B": "llama3.1:8b",
+        "b_A_only": 15,
+        "c_B_only": 3,
+        "chi2": 6.72,
+        "p": 0.0095,
+        "verdict": "qwen significantly better on action"
+      },
+      {
+        "A": "gemma2:9b-q4_K_M",
+        "B": "llama3.1:8b",
+        "b_A_only": 28,
+        "c_B_only": 2,
+        "chi2": 20.83,
+        "p": 4e-06,
+        "verdict": "gemma significantly better on action"
+      }
+    ],
+    "exact_match_note": "0 discordant pairs between any Phase-1 pair (identical 14 exact-matched intents for qwen and gemma at temp=0; deterministic models agree on exact-matchable intents). Continuous match_pct differs only via partial matches -> use paired t-test/Wilcoxon; 0.5pp diff with overlapping CIs is n.s."
+  },
+  "qualifications": {
+    "M3_bandwidth_bound": "CLAIM QUALIFIED: memory-bandwidth-bound applies to the Qwen family and most configs (quant-bit-up -> BW-up every size: 7B Q2_K 8.8 < Q4_K_M 9.0 < Q8_0 12.2 GB/s; peak approaches ceiling: llama3.1:8b peak 17.0 GB/s = 80% of 21.3 GB/s, 7B Q8_0 15.0 = 70%). EXCEPTION: gemma2:9b is NOT bandwidth-bound (lowest %peak 24%, highest energy 5517 J, slowest 23.7 s/int) -> architecture/kernel-bound (sliding-window attention + logit soft-cap slow in llama.cpp). Report peak-first for saturation evidence; avg %peak is diluted by prefill/idle gaps.",
+    "M4_energy": "Real RAPL energy (both packages) exceeds CPU%xTDP estimate by ~40-80% (e.g. 7B Q4_K_M: 2458 J vs 1421 J) because the estimate ignores host idle (~39 W) and 2-socket overhead. Report total AND marginal (E_RAPL - idle_watts x duration); pkg0-only values provided for the inference socket. Limitation: measurement is host-level (includes idle + collector VM stopped during runs; NUMA locality 88% node 0; IMC capture verified 100% across both sockets via node-bound streams).",
+    "M8_temp0": "temp=0 deterministic re-run replicates v3 accuracy within +-0.4pp on all 16 configs (only gemma action moved +4.5pp). Near-tie ranking (qwen vs gemma on match) flipped vs v3 -> use McNemar (binary action) / paired tests (continuous match); see mcnemar results above. At temp=0, gemma > qwen on ACTION significantly (p=0.0037).",
+    "substrate": "16 vCPU on 16 physical cores (0-15, 1 thread/core) = v3-equivalent; VM memory 88% NUMA-local node 0; host-side RAPL + uncore IMC counters (capture 100%). Pinning to 1 socket (8 phys cores) was tested and rejected: 4-60x inference slowdown from HT oversubscription."
+  }
+}

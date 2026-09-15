@@ -1,0 +1,1146 @@
+{
+  "peak_bw_gbps_theoretical": 21.32,
+  "locality": "node0_pct=88",
+  "rows": [
+    {
+      "model": "gemma2:9b-q4_K_M",
+      "family": "Gemma",
+      "phase": 1,
+      "format": 100.0,
+      "action": 50.0,
+      "match": 30.0,
+      "time_s": 23.71,
+      "tps": 1.7,
+      "cpu": 95.93,
+      "peak_mem_mb": 7613.06,
+      "energy_j_rapl_avg": 5517.1,
+      "energy_j_rapl_marginal": 4582.2,
+      "energy_j_pkg0_marginal": 2247.8,
+      "energy_j_est": 3076.2,
+      "mem_bw_gbps": 5.12,
+      "mem_bw_peak_gbps": 13.75,
+      "mem_bw_pct_peak": 24.0,
+      "counter_errors": 0,
+      "ci": {
+        "match_pct": [
+          30.02,
+          28.6,
+          26.0,
+          34.03
+        ],
+        "duration_s": [
+          23.71,
+          9.24,
+          22.41,
+          25.01
+        ],
+        "energy_j": [
+          3076.2,
+          1226.64,
+          2904.12,
+          3248.29
+        ],
+        "energy_j_rapl": [
+          5517.11,
+          2031.82,
+          5232.07,
+          5802.15
+        ],
+        "mem_bw_gbps": [
+          5.12,
+          1.91,
+          4.86,
+          5.39
+        ],
+        "cpu_pct": [
+          95.93,
+          0.8,
+          95.82,
+          96.04
+        ],
+        "avg_memory_mb": [
+          7580.55,
+          799.35,
+          7468.41,
+          7692.7
+        ],
+        "peak_memory_mb": [
+          7613.06,
+          847.85,
+          7494.12,
+          7732.01
+        ],
+        "tokens_per_sec": [
+          3.29,
+          0.19,
+          3.26,
+          3.32
+        ]
+      }
+    },
+    {
+      "model": "glm4:9b-q4_K_M",
+      "family": "GLM",
+      "phase": 1,
+      "format": 100.0,
+      "action": 29.0,
+      "match": 24.8,
+      "time_s": 13.12,
+      "tps": 3.1,
+      "cpu": 93.81,
+      "peak_mem_mb": 6794.28,
+      "energy_j_rapl_avg": 2905.5,
+      "energy_j_rapl_marginal": 2388.1,
+      "energy_j_pkg0_marginal": 1164.8,
+      "energy_j_est": 1675.0,
+      "mem_bw_gbps": 7.08,
+      "mem_bw_peak_gbps": 9.27,
+      "mem_bw_pct_peak": 33.2,
+      "counter_errors": 0,
+      "ci": {
+        "match_pct": [
+          24.75,
+          26.49,
+          21.03,
+          28.47
+        ],
+        "duration_s": [
+          13.12,
+          6.07,
+          12.27,
+          13.98
+        ],
+        "energy_j": [
+          1675.05,
+          809.73,
+          1561.45,
+          1788.64
+        ],
+        "energy_j_rapl": [
+          2905.5,
+          1354.21,
+          2715.52,
+          3095.48
+        ],
+        "mem_bw_gbps": [
+          7.08,
+          0.36,
+          7.03,
+          7.13
+        ],
+        "cpu_pct": [
+          93.81,
+          2.31,
+          93.49,
+          94.14
+        ],
+        "avg_memory_mb": [
+          6764.64,
+          1799.11,
+          6512.24,
+          7017.04
+        ],
+        "peak_memory_mb": [
+          6794.28,
+          1865.64,
+          6532.55,
+          7056.01
+        ],
+        "tokens_per_sec": [
+          3.74,
+          0.16,
+          3.72,
+          3.76
+        ]
+      }
+    },
+    {
+      "model": "llama3.1:8b",
+      "family": "Llama",
+      "phase": 1,
+      "format": 100.0,
+      "action": 37.0,
+      "match": 25.9,
+      "time_s": 11.75,
+      "tps": 3.5,
+      "cpu": 92.63,
+      "peak_mem_mb": 5392.41,
+      "energy_j_rapl_avg": 2560.1,
+      "energy_j_rapl_marginal": 2099.7,
+      "energy_j_pkg0_marginal": 1047.9,
+      "energy_j_est": 1479.6,
+      "mem_bw_gbps": 13.12,
+      "mem_bw_peak_gbps": 17.04,
+      "mem_bw_pct_peak": 61.5,
+      "counter_errors": 1,
+      "ci": {
+        "match_pct": [
+          25.86,
+          27.71,
+          21.98,
+          29.75
+        ],
+        "duration_s": [
+          11.75,
+          5.17,
+          11.02,
+          12.47
+        ],
+        "energy_j": [
+          1479.56,
+          687.17,
+          1383.16,
+          1575.96
+        ],
+        "energy_j_rapl": [
+          2560.05,
+          1136.49,
+          2400.22,
+          2719.89
+        ],
+        "mem_bw_gbps": [
+          13.12,
+          1.38,
+          12.93,
+          13.31
+        ],
+        "cpu_pct": [
+          92.63,
+          2.16,
+          92.33,
+          92.93
+        ],
+        "avg_memory_mb": [
+          5392.33,
+          0.39,
+          5392.27,
+          5392.38
+        ],
+        "peak_memory_mb": [
+          5392.41,
+          0.33,
+          5392.36,
+          5392.45
+        ],
+        "tokens_per_sec": [
+          4.34,
+          0.28,
+          4.3,
+          4.38
+        ]
+      }
+    },
+    {
+      "model": "qwen2_5-0_5b-q2k:latest",
+      "family": "Qwen",
+      "phase": 2,
+      "format": 100.0,
+      "action": 24.0,
+      "match": 18.0,
+      "time_s": 1.64,
+      "tps": 20.3,
+      "cpu": 57.52,
+      "peak_mem_mb": 3151.63,
+      "energy_j_rapl_avg": 302.7,
+      "energy_j_rapl_marginal": 238.4,
+      "energy_j_pkg0_marginal": 118.0,
+      "energy_j_est": 133.6,
+      "mem_bw_gbps": 3.69,
+      "mem_bw_peak_gbps": 7.01,
+      "mem_bw_pct_peak": 17.3,
+      "counter_errors": 0,
+      "ci": {
+        "match_pct": [
+          18.0,
+          24.18,
+          14.61,
+          21.39
+        ],
+        "duration_s": [
+          1.64,
+          0.56,
+          1.56,
+          1.71
+        ],
+        "energy_j": [
+          133.58,
+          67.86,
+          124.06,
+          143.1
+        ],
+        "energy_j_rapl": [
+          302.71,
+          114.14,
+          286.7,
+          318.72
+        ],
+        "mem_bw_gbps": [
+          3.69,
+          0.75,
+          3.58,
+          3.79
+        ],
+        "cpu_pct": [
+          57.52,
+          11.77,
+          55.87,
+          59.17
+        ],
+        "avg_memory_mb": [
+          3146.31,
+          2436.34,
+          2804.52,
+          3488.11
+        ],
+        "peak_memory_mb": [
+          3151.63,
+          2439.75,
+          2809.36,
+          3493.9
+        ],
+        "tokens_per_sec": [
+          37.01,
+          3.33,
+          36.54,
+          37.47
+        ]
+      }
+    },
+    {
+      "model": "qwen2.5-0.5b-q8_0:latest",
+      "family": "Qwen",
+      "phase": 2,
+      "format": 100.0,
+      "action": 26.0,
+      "match": 19.6,
+      "time_s": 1.61,
+      "tps": 17.1,
+      "cpu": 59.36,
+      "peak_mem_mb": 2563.29,
+      "energy_j_rapl_avg": 294.8,
+      "energy_j_rapl_marginal": 231.2,
+      "energy_j_pkg0_marginal": 113.4,
+      "energy_j_est": 135.3,
+      "mem_bw_gbps": 5.03,
+      "mem_bw_peak_gbps": 8.96,
+      "mem_bw_pct_peak": 23.6,
+      "counter_errors": 0,
+      "ci": {
+        "match_pct": [
+          19.59,
+          24.57,
+          16.14,
+          23.03
+        ],
+        "duration_s": [
+          1.61,
+          0.56,
+          1.54,
+          1.69
+        ],
+        "energy_j": [
+          135.28,
+          68.53,
+          125.67,
+          144.9
+        ],
+        "energy_j_rapl": [
+          294.78,
+          113.37,
+          278.87,
+          310.68
+        ],
+        "mem_bw_gbps": [
+          5.03,
+          0.81,
+          4.92,
+          5.15
+        ],
+        "cpu_pct": [
+          59.36,
+          11.7,
+          57.72,
+          61.0
+        ],
+        "avg_memory_mb": [
+          2550.69,
+          1622.89,
+          2323.02,
+          2778.37
+        ],
+        "peak_memory_mb": [
+          2563.29,
+          1624.23,
+          2335.42,
+          2791.15
+        ],
+        "tokens_per_sec": [
+          30.52,
+          2.39,
+          30.18,
+          30.86
+        ]
+      }
+    },
+    {
+      "model": "qwen2_5-1_5b-q2k:latest",
+      "family": "Qwen",
+      "phase": 2,
+      "format": 100.0,
+      "action": 39.5,
+      "match": 21.7,
+      "time_s": 2.58,
+      "tps": 12.9,
+      "cpu": 67.21,
+      "peak_mem_mb": 1109.44,
+      "energy_j_rapl_avg": 530.5,
+      "energy_j_rapl_marginal": 428.7,
+      "energy_j_pkg0_marginal": 210.9,
+      "energy_j_est": 259.0,
+      "mem_bw_gbps": 4.54,
+      "mem_bw_peak_gbps": 8.39,
+      "mem_bw_pct_peak": 21.3,
+      "counter_errors": 0,
+      "ci": {
+        "match_pct": [
+          21.71,
+          25.73,
+          18.1,
+          25.32
+        ],
+        "duration_s": [
+          2.58,
+          4.28,
+          1.98,
+          3.18
+        ],
+        "energy_j": [
+          259.0,
+          541.54,
+          183.03,
+          334.97
+        ],
+        "energy_j_rapl": [
+          530.49,
+          945.22,
+          397.88,
+          663.09
+        ],
+        "mem_bw_gbps": [
+          4.54,
+          1.15,
+          4.38,
+          4.7
+        ],
+        "cpu_pct": [
+          67.21,
+          13.48,
+          65.32,
+          69.1
+        ],
+        "avg_memory_mb": [
+          1108.69,
+          214.2,
+          1078.64,
+          1138.74
+        ],
+        "peak_memory_mb": [
+          1109.44,
+          214.47,
+          1079.35,
+          1139.53
+        ],
+        "tokens_per_sec": [
+          22.11,
+          1.99,
+          21.83,
+          22.38
+        ]
+      }
+    },
+    {
+      "model": "qwen2.5-1.5b-q8_0:latest",
+      "family": "Qwen",
+      "phase": 2,
+      "format": 98.0,
+      "action": 40.5,
+      "match": 25.7,
+      "time_s": 4.64,
+      "tps": 9.7,
+      "cpu": 82.29,
+      "peak_mem_mb": 1962.97,
+      "energy_j_rapl_avg": 971.2,
+      "energy_j_rapl_marginal": 789.6,
+      "energy_j_pkg0_marginal": 385.8,
+      "energy_j_est": 529.9,
+      "mem_bw_gbps": 9.43,
+      "mem_bw_peak_gbps": 12.67,
+      "mem_bw_pct_peak": 44.2,
+      "counter_errors": 0,
+      "ci": {
+        "match_pct": [
+          25.67,
+          29.09,
+          21.59,
+          29.75
+        ],
+        "duration_s": [
+          4.64,
+          2.21,
+          4.33,
+          4.95
+        ],
+        "energy_j": [
+          529.94,
+          284.12,
+          490.08,
+          569.8
+        ],
+        "energy_j_rapl": [
+          971.23,
+          480.78,
+          903.78,
+          1038.67
+        ],
+        "mem_bw_gbps": [
+          9.43,
+          0.94,
+          9.3,
+          9.56
+        ],
+        "cpu_pct": [
+          82.29,
+          6.66,
+          81.36,
+          83.23
+        ],
+        "avg_memory_mb": [
+          1960.68,
+          249.08,
+          1925.74,
+          1995.62
+        ],
+        "peak_memory_mb": [
+          1962.97,
+          251.49,
+          1927.68,
+          1998.25
+        ],
+        "tokens_per_sec": [
+          12.5,
+          0.56,
+          12.43,
+          12.58
+        ]
+      }
+    },
+    {
+      "model": "qwen2_5-3b-q2k:latest",
+      "family": "Qwen",
+      "phase": 2,
+      "format": 99.0,
+      "action": 42.5,
+      "match": 24.2,
+      "time_s": 4.45,
+      "tps": 7.6,
+      "cpu": 83.24,
+      "peak_mem_mb": 1721.84,
+      "energy_j_rapl_avg": 973.7,
+      "energy_j_rapl_marginal": 798.7,
+      "energy_j_pkg0_marginal": 393.0,
+      "energy_j_est": 508.2,
+      "mem_bw_gbps": 6.92,
+      "mem_bw_peak_gbps": 10.23,
+      "mem_bw_pct_peak": 32.5,
+      "counter_errors": 0,
+      "ci": {
+        "match_pct": [
+          24.16,
+          27.68,
+          20.28,
+          28.05
+        ],
+        "duration_s": [
+          4.45,
+          1.8,
+          4.2,
+          4.71
+        ],
+        "energy_j": [
+          508.18,
+          235.35,
+          475.16,
+          541.2
+        ],
+        "energy_j_rapl": [
+          973.68,
+          408.45,
+          916.38,
+          1030.98
+        ],
+        "mem_bw_gbps": [
+          6.92,
+          0.63,
+          6.84,
+          7.01
+        ],
+        "cpu_pct": [
+          83.24,
+          4.68,
+          82.59,
+          83.9
+        ],
+        "avg_memory_mb": [
+          1718.08,
+          369.06,
+          1666.31,
+          1769.86
+        ],
+        "peak_memory_mb": [
+          1721.84,
+          372.35,
+          1669.6,
+          1774.07
+        ],
+        "tokens_per_sec": [
+          11.16,
+          0.6,
+          11.08,
+          11.25
+        ]
+      }
+    },
+    {
+      "model": "qwen2.5-3b-q8_0:latest",
+      "family": "Qwen",
+      "phase": 2,
+      "format": 99.0,
+      "action": 44.0,
+      "match": 26.8,
+      "time_s": 5.9,
+      "tps": 5.9,
+      "cpu": 86.61,
+      "peak_mem_mb": 3728.28,
+      "energy_j_rapl_avg": 1276.6,
+      "energy_j_rapl_marginal": 1044.5,
+      "energy_j_pkg0_marginal": 511.9,
+      "energy_j_est": 702.7,
+      "mem_bw_gbps": 9.58,
+      "mem_bw_peak_gbps": 12.77,
+      "mem_bw_pct_peak": 44.9,
+      "counter_errors": 0,
+      "ci": {
+        "match_pct": [
+          26.84,
+          29.04,
+          22.76,
+          30.91
+        ],
+        "duration_s": [
+          5.9,
+          2.85,
+          5.5,
+          6.3
+        ],
+        "energy_j": [
+          702.67,
+          373.12,
+          650.33,
+          755.02
+        ],
+        "energy_j_rapl": [
+          1276.57,
+          632.53,
+          1187.84,
+          1365.31
+        ],
+        "mem_bw_gbps": [
+          9.58,
+          1.03,
+          9.44,
+          9.72
+        ],
+        "cpu_pct": [
+          86.61,
+          5.42,
+          85.84,
+          87.37
+        ],
+        "avg_memory_mb": [
+          3725.27,
+          646.62,
+          3634.56,
+          3815.98
+        ],
+        "peak_memory_mb": [
+          3728.28,
+          651.67,
+          3636.86,
+          3819.71
+        ],
+        "tokens_per_sec": [
+          7.85,
+          0.82,
+          7.73,
+          7.96
+        ]
+      }
+    },
+    {
+      "model": "qwen2.5-7b-q2k:latest",
+      "family": "Qwen",
+      "phase": 2,
+      "format": 100.0,
+      "action": 42.0,
+      "match": 29.1,
+      "time_s": 8.63,
+      "tps": 4.6,
+      "cpu": 90.56,
+      "peak_mem_mb": 3471.3,
+      "energy_j_rapl_avg": 1951.2,
+      "energy_j_rapl_marginal": 1611.6,
+      "energy_j_pkg0_marginal": 801.1,
+      "energy_j_est": 1066.1,
+      "mem_bw_gbps": 8.79,
+      "mem_bw_peak_gbps": 12.77,
+      "mem_bw_pct_peak": 41.2,
+      "counter_errors": 0,
+      "ci": {
+        "match_pct": [
+          29.08,
+          29.04,
+          25.01,
+          33.16
+        ],
+        "duration_s": [
+          8.63,
+          3.93,
+          8.08,
+          9.18
+        ],
+        "energy_j": [
+          1066.12,
+          518.91,
+          993.32,
+          1138.91
+        ],
+        "energy_j_rapl": [
+          1951.24,
+          898.93,
+          1825.13,
+          2077.35
+        ],
+        "mem_bw_gbps": [
+          8.79,
+          1.23,
+          8.61,
+          8.96
+        ],
+        "cpu_pct": [
+          90.56,
+          3.33,
+          90.1,
+          91.03
+        ],
+        "avg_memory_mb": [
+          3471.04,
+          462.73,
+          3406.12,
+          3535.95
+        ],
+        "peak_memory_mb": [
+          3471.3,
+          462.65,
+          3406.39,
+          3536.2
+        ],
+        "tokens_per_sec": [
+          6.18,
+          0.3,
+          6.14,
+          6.23
+        ]
+      }
+    },
+    {
+      "model": "qwen2.5-7b-q8_0:latest",
+      "family": "Qwen",
+      "phase": 2,
+      "format": 100.0,
+      "action": 44.0,
+      "match": 30.3,
+      "time_s": 12.64,
+      "tps": 3.1,
+      "cpu": 93.48,
+      "peak_mem_mb": 8376.43,
+      "energy_j_rapl_avg": 2838.6,
+      "energy_j_rapl_marginal": 2341.0,
+      "energy_j_pkg0_marginal": 1141.3,
+      "energy_j_est": 1609.0,
+      "mem_bw_gbps": 12.24,
+      "mem_bw_peak_gbps": 14.95,
+      "mem_bw_pct_peak": 57.4,
+      "counter_errors": 0,
+      "ci": {
+        "match_pct": [
+          30.3,
+          29.64,
+          26.14,
+          34.46
+        ],
+        "duration_s": [
+          12.64,
+          6.28,
+          11.76,
+          13.52
+        ],
+        "energy_j": [
+          1609.04,
+          836.33,
+          1491.71,
+          1726.37
+        ],
+        "energy_j_rapl": [
+          2838.58,
+          1421.26,
+          2639.2,
+          3037.97
+        ],
+        "mem_bw_gbps": [
+          12.24,
+          0.76,
+          12.14,
+          12.35
+        ],
+        "cpu_pct": [
+          93.48,
+          2.4,
+          93.14,
+          93.82
+        ],
+        "avg_memory_mb": [
+          8367.4,
+          808.6,
+          8253.96,
+          8480.84
+        ],
+        "peak_memory_mb": [
+          8376.43,
+          833.18,
+          8259.54,
+          8493.32
+        ],
+        "tokens_per_sec": [
+          3.73,
+          0.1,
+          3.72,
+          3.74
+        ]
+      }
+    },
+    {
+      "model": "qwen2.5:0.5b",
+      "family": "Qwen",
+      "phase": 2,
+      "format": 95.0,
+      "action": 32.5,
+      "match": 18.3,
+      "time_s": 1.74,
+      "tps": 19.2,
+      "cpu": 59.84,
+      "peak_mem_mb": 3752.89,
+      "energy_j_rapl_avg": 327.5,
+      "energy_j_rapl_marginal": 259.0,
+      "energy_j_pkg0_marginal": 128.2,
+      "energy_j_est": 148.9,
+      "mem_bw_gbps": 4.41,
+      "mem_bw_peak_gbps": 8.03,
+      "mem_bw_pct_peak": 20.7,
+      "counter_errors": 0,
+      "ci": {
+        "match_pct": [
+          18.32,
+          24.55,
+          14.87,
+          21.76
+        ],
+        "duration_s": [
+          1.74,
+          0.67,
+          1.64,
+          1.83
+        ],
+        "energy_j": [
+          148.89,
+          80.01,
+          137.66,
+          160.11
+        ],
+        "energy_j_rapl": [
+          327.5,
+          137.45,
+          308.22,
+          346.78
+        ],
+        "mem_bw_gbps": [
+          4.41,
+          1.08,
+          4.26,
+          4.57
+        ],
+        "cpu_pct": [
+          59.84,
+          12.56,
+          58.08,
+          61.6
+        ],
+        "avg_memory_mb": [
+          3744.64,
+          3122.66,
+          3306.56,
+          4182.72
+        ],
+        "peak_memory_mb": [
+          3752.89,
+          3128.34,
+          3314.02,
+          4191.77
+        ],
+        "tokens_per_sec": [
+          33.61,
+          4.1,
+          33.03,
+          34.19
+        ]
+      }
+    },
+    {
+      "model": "qwen2.5:1.5b",
+      "family": "Qwen",
+      "phase": 2,
+      "format": 98.0,
+      "action": 41.0,
+      "match": 25.8,
+      "time_s": 3.22,
+      "tps": 13.4,
+      "cpu": 75.01,
+      "peak_mem_mb": 1354.04,
+      "energy_j_rapl_avg": 654.2,
+      "energy_j_rapl_marginal": 527.9,
+      "energy_j_pkg0_marginal": 258.4,
+      "energy_j_est": 338.0,
+      "mem_bw_gbps": 7.34,
+      "mem_bw_peak_gbps": 10.99,
+      "mem_bw_pct_peak": 34.4,
+      "counter_errors": 0,
+      "ci": {
+        "match_pct": [
+          25.79,
+          28.34,
+          21.81,
+          29.76
+        ],
+        "duration_s": [
+          3.22,
+          1.52,
+          3.01,
+          3.43
+        ],
+        "energy_j": [
+          337.98,
+          190.1,
+          311.31,
+          364.65
+        ],
+        "energy_j_rapl": [
+          654.21,
+          323.85,
+          608.78,
+          699.65
+        ],
+        "mem_bw_gbps": [
+          7.34,
+          0.97,
+          7.21,
+          7.48
+        ],
+        "cpu_pct": [
+          75.01,
+          8.31,
+          73.84,
+          76.17
+        ],
+        "avg_memory_mb": [
+          1352.19,
+          222.04,
+          1321.04,
+          1383.34
+        ],
+        "peak_memory_mb": [
+          1354.04,
+          223.32,
+          1322.71,
+          1385.37
+        ],
+        "tokens_per_sec": [
+          19.49,
+          1.25,
+          19.32,
+          19.67
+        ]
+      }
+    },
+    {
+      "model": "qwen2.5:3b",
+      "family": "Qwen",
+      "phase": 2,
+      "format": 98.5,
+      "action": 46.0,
+      "match": 27.4,
+      "time_s": 5.11,
+      "tps": 6.7,
+      "cpu": 84.85,
+      "peak_mem_mb": 2371.82,
+      "energy_j_rapl_avg": 1093.7,
+      "energy_j_rapl_marginal": 892.8,
+      "energy_j_pkg0_marginal": 439.9,
+      "energy_j_est": 596.7,
+      "mem_bw_gbps": 6.58,
+      "mem_bw_peak_gbps": 9.19,
+      "mem_bw_pct_peak": 30.9,
+      "counter_errors": 0,
+      "ci": {
+        "match_pct": [
+          27.42,
+          29.11,
+          23.34,
+          31.51
+        ],
+        "duration_s": [
+          5.11,
+          2.33,
+          4.78,
+          5.43
+        ],
+        "energy_j": [
+          596.67,
+          305.71,
+          553.79,
+          639.56
+        ],
+        "energy_j_rapl": [
+          1093.74,
+          513.37,
+          1021.72,
+          1165.76
+        ],
+        "mem_bw_gbps": [
+          6.58,
+          0.72,
+          6.48,
+          6.69
+        ],
+        "cpu_pct": [
+          84.85,
+          6.52,
+          83.93,
+          85.76
+        ],
+        "avg_memory_mb": [
+          2367.31,
+          454.62,
+          2303.54,
+          2431.09
+        ],
+        "peak_memory_mb": [
+          2371.82,
+          459.35,
+          2307.38,
+          2436.26
+        ],
+        "tokens_per_sec": [
+          9.21,
+          1.13,
+          9.05,
+          9.37
+        ]
+      }
+    },
+    {
+      "model": "qwen2.5:7b",
+      "family": "Qwen",
+      "phase": 2,
+      "format": 100.0,
+      "action": 43.0,
+      "match": 29.5,
+      "time_s": 11.25,
+      "tps": 3.6,
+      "cpu": 92.55,
+      "peak_mem_mb": 5108.83,
+      "energy_j_rapl_avg": 2457.5,
+      "energy_j_rapl_marginal": 2015.5,
+      "energy_j_pkg0_marginal": 992.5,
+      "energy_j_est": 1421.3,
+      "mem_bw_gbps": 8.95,
+      "mem_bw_peak_gbps": 11.54,
+      "mem_bw_pct_peak": 42.0,
+      "counter_errors": 0,
+      "ci": {
+        "match_pct": [
+          29.47,
+          28.75,
+          25.44,
+          33.5
+        ],
+        "duration_s": [
+          11.25,
+          6.08,
+          10.39,
+          12.1
+        ],
+        "energy_j": [
+          1421.35,
+          811.41,
+          1307.52,
+          1535.18
+        ],
+        "energy_j_rapl": [
+          2457.54,
+          1337.58,
+          2269.89,
+          2645.19
+        ],
+        "mem_bw_gbps": [
+          8.95,
+          0.49,
+          8.88,
+          9.02
+        ],
+        "cpu_pct": [
+          92.55,
+          2.89,
+          92.14,
+          92.96
+        ],
+        "avg_memory_mb": [
+          5107.77,
+          599.81,
+          5023.62,
+          5191.92
+        ],
+        "peak_memory_mb": [
+          5108.83,
+          601.96,
+          5024.38,
+          5193.28
+        ],
+        "tokens_per_sec": [
+          4.51,
+          0.16,
+          4.49,
+          4.54
+        ]
+      }
+    }
+  ]
+}
