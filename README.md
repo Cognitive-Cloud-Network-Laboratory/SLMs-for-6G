@@ -8,7 +8,9 @@ All evaluations enforce deterministic decoding (`temperature = 0`, greedy argmax
 
 ---
 1. Directory Structure
+   
 ==========================
+
 `dataset/`
  	`intents.jsonl`: Complete 200-intent benchmark across 3 lifecycle domains (`PROV`, `SCAL`, `CONF`) and 3 complexity tiers (Simple, Complex, Ambiguous).
 
@@ -32,7 +34,9 @@ scripts/`
   	`a_result.json`: Empirical outputs from the retrieval-augmented baseline.
   	`analysis_notes.json`: Statistical pairing logs (McNemar tests with continuity corrections).
 
+
 2. Hardware and Environment Requirements
+   
 =============================================
 
 Host Platform: Dual-socket Intel Xeon E5-2690 (Sandy Bridge-EP, 16 physical cores, DDR3-1333, 64 GB RAM).
@@ -41,7 +45,9 @@ OS: Bare-metal Linux host with direct access to:
   	- Linux `perf` uncore IMC events (`uncore_imc_0/cas_count_read/`, `uncore_imc_0/cas_count_write/`)
 Software Dependencies: Python 3.10+ (standard libraries, `matplotlib`), Ollama daemon, and compiled `llama-server` binaries.
 
+
 3. Reproduction Workflow
+
 ==========================
 
 Step 1: Reproduce Statistical Figures and Tables (Zero-Inference)
